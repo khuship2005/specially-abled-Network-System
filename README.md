@@ -4,23 +4,27 @@ The Specially-abled Network System is a web platform empowering individuals with
 # Getting Started:
 To run this project on your local machine, follow these steps:
   
-  Prerequisites:
-- Make sure you have XAMPP installed on your computer.
-- Ensure you have PHP installed and configured properly.
+Prerequisites:
+1. Make sure you have XAMPP installed on your computer.
+2. Ensure you have PHP installed and configured properly.
+3. Create a database named 'registration' with a table named 'users'.
+
   
-  Installation:
+Installation:
 1. Clone the repository: git clone https://github.com/khuship2005/specially-abled-Network-System.git
 2. Navigate to the cloned repository and copy the project folder.
 3. Paste the project folder into the htdocs directory of your web server.
+
    
-   Running the Project
+Running the Project
 1. Start your web server i.e. Apache and MySQL.
 2. Open a web browser and navigate to http://localhost/your-project-folder/homepage.php
 
-# Features
+# Features:
 1. Job Opportunities
 2. Government Scheme
 3. Sign Language Tutorial Module
+4. User Account Management: Secure login and logout functionality to access personalized job and scheme details.
 
 # Execution:
 Visit "http://localhost/folder_name/homepage.php" on web browser to access the web appliaction.
