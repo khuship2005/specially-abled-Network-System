@@ -26,7 +26,8 @@ Visit "http://localhost/folder_name/homepage.php" on web browser to access the w
 
 
 # Technologies used:
-- Front-end: HTML, CSS, and JavaScript for designing and building GUI.
+- Front-end: HTML, CSS, and JavaScript for designing and building the website's user interface.
+
 - Back-end: PHP for handling form data and database interaction.
 - Database: MySQL for storing and managing data, interacted with through PHP.
 
