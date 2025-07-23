@@ -20,11 +20,19 @@ Running the Project
 1. Start your web server i.e. Apache and MySQL.
 2. Open a web browser and navigate to http://localhost/your-project-folder/homepage.php
 
+
+# Execution:
+Visit "http://localhost/folder_name/homepage.php" on web browser to access the web appliaction.
+
+
+# Technologies used:
+- Front-end: HTML, CSS, and JavaScript for designing and building GUI.
+- Back-end: PHP for handling form data and database interaction.
+- Database: MySQL for storing and managing data, interacted with through PHP.
+
+
 # Features:
 1. Job Opportunities
 2. Government Scheme
 3. Sign Language Tutorial Module
 4. User Account Management: Secure login and logout functionality to access personalized job and scheme details.
-
-# Execution:
-Visit "http://localhost/folder_name/homepage.php" on web browser to access the web appliaction.
