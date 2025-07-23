@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body 
+{
+position: relative;
+background-color: rgb(223, 213, 211);
+}
+body::before
+{
+content: "";
+position:absolute;
+top:0;
+left:0;
+width:19.6%;
+height: 95%;
+animation: rollout 3s ease-in-out forwards;
+animation-delay: 1ms;
+background-color:rgb(109, 92, 77) ;
+}
+.image-container 
+{
+position: relative;
+}
+.images 
+{
+position: absolute;
+bottom: -300px;
+left: 10px;
+animation: rollout 3s ease-in-out forwards;
+animation-delay: 1ms;
+}
+.gallery-image 
+{
+width: 225px;
+height: 225px;
+border-radius: 30%;
+object-fit: cover;
+box-shadow: 0 0 10px rgba(249, 209, 209, 0.1);
+cursor: pointer;
+margin-bottom: 20px;
+}
+.social-media 
+{
+text-align: center;
+flex-direction: column;
+display: flex;
+align-items: left;
+margin-left: 20px;
+}
+.social-media-icon 
+{
+position: relative;
+margin: 8px 0;
+display: flex;
+align-items: center;
+}
+.social-media-icon img 
+{
+width: 40px;
+height: 40px;
+border-radius: 50px;
+border: 1.5px solid rgb(224, 221, 217);
+box-shadow: 0 0 10px rgba(60, 50, 40, 0.5);
+margin-right: 10px;
+}
+.social-media-icon span 
+{
+position: absolute;
+top: 56.5%; 
+left: 57%;
+transform: translate(-50%, -50%);
+font-size: 15.5px;
+color: rgb(219, 204, 201);
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+pointer-events: none;
+padding: 2px 5px;
+text-align: left;
+}
+.social-media-icon:hover img 
+{
+transform: scale(1.1);
+box-shadow: 0 0 10px rgba(249, 209, 209, 0.5);
+cursor: pointer;
+}
+.social-media-icon:hover span 
+{
+color: rgb(244, 239, 238);
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.text-container 
+{
+position: absolute;
+top: 15px;
+left: 245px;
+}
+.text 
+{
+text-align: left;
+padding: 0px;
+font-size: 22px;
+margin-top: 20px;
+color: rgb(60, 50, 40);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+opacity: 0;
+animation: fadein 1s ease-in-out forwards;
+animation-delay: 2s;
+}
+.text2 
+{
+font-size: 35px;
+color: rgb(60, 50, 40);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bold;
+text-align: center;
+opacity: 0;
+animation: fadein 1s ease-in-out forwards;
+animation-delay: 1.5s;
+}
+.text3
+{
+font-size: 24px;
+color: rgb(60, 50, 40);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bold;
+text-align: center;
+opacity: 0;
+animation: fadein 1s ease-in-out forwards;
+animation-delay: 1.5s;
+}
+@keyframes rollout 
+{
+0% {
+top: -2000px;
+}
+100% {
+bottom: 150px;
+}
+}
+@keyframes fadein 
+{
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+</style>
+</head>
+<body>
+<div class="image-container" style="height: 600px;">
+<div class="images">
+<img src="logo.jpg" alt="Image" class="gallery-image">
+<div class="social-media">
+<div class="social-media-icon">
+<img src="icon1.jpg" alt="Facebook">
+<span>@specialSpace.org</span>
+</div>
+<div class="social-media-icon">
+<img src="icon2.jpg" alt="Instagram">
+<span>@specialSpace.org</span>
+</div>
+<div class="social-media-icon">
+<img src="icon3.jpg" alt="Twitter">
+<span>@specialSpace.org</span>
+</div>
+</div>
+</div>
+<div class="text-container">
+<p class="text2">Our Mission</p>
+<pre class="text">
+    At specialSpace, we believe that every individual deserves to live a life with dignity and respect,      
+    regardless of their abilities. Our mission is to empower people with disabilities by providing them 
+    with access to information, resources, and opportunities that can help them thrive.
+    
+    We aim to create a one-stop platform for people with disabilities, their families, and caregivers,
+    offering a comprehensive range of services and resources to navigate the complexities of living with  
+    a disability. 
+    
+    Our vision is to create a world where people with disabilities are valued, respected, and empowered
+    to reach their full potential. By providing access to information, resources, and opportunities, 
+    we can help people with disabilities overcome barriers and thrive. 
+    
+    If you're passionate about making a difference, join our mission! 
+    Follow us on social media to stay updated.
+</pre>
+<p class="text3">Together we can create a better World!</p>
+</div>
+</div>
+</body>
+</html>

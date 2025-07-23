@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quiz</title>
+  <style>
+    body 
+    {
+      background: rgba(255, 245, 241, 0.78) ;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px 0;
+      margin: 0;
+    }
+    #p2
+    {
+      color: rgb(97, 82, 74);
+      font-size: 18px;
+      margin-bottom: 30px;
+      text-align:left;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 'Helvetica Neue';
+    }
+    #p1 
+    {
+    font-weight:bold;
+      color: rgb(97, 82, 74);
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 24px;
+      margin-bottom: 30px;
+      text-align:left;
+    }
+    #intro
+    {
+        margin: 20px 0;
+      padding: 20px;
+      border: 2px solid #5c4931;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    #ques 
+    {
+      margin: 20px 0;
+      padding: 20px;
+      border: 2px solid #5c4931;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    legend 
+    {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+    label 
+    {
+      font-size: 16px;
+      color: #333;
+      margin: 10px 0;
+      display: block;
+    }
+    input[type="radio"] 
+    {
+      margin-right: 10px;
+    }
+    .form-group 
+    {
+      text-align: left;
+      margin: 20px 0;
+    }
+    .btn 
+    {
+      background-color: rgb(86, 65, 55);
+      color: white;
+      padding: 12px 35px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      margin-left: 25px;
+    }
+    .btn:hover 
+    {
+      background-color: rgb(130, 103, 86);
+    }
+    .form-container 
+    {
+      width: 60%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgb(208, 195, 186);
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .quiz-image 
+    {
+      width: 300px;
+      height: auto;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .result-container 
+    {
+      display: none;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container" id="quizForm">
+    <fieldset id="intro">
+        <p id="p1">Evaluate Your Learning!</p>
+        <p id="p2">Hey Signers! We hope we've helped you learn the basics of sign language and now we're excited to see how you've progressed in your learning journey. Please take a few minutes to complete this quiz and showcase your skills!</p>
+      </fieldset>
+      <form id="quiz" method="post">
+        <fieldset id="ques">
+          <p style="margin-top:5px;font-family:Verdana, Geneva, Tahoma, sans-serif;color:rgb(53, 42, 36);font-size: 17.5px;"><b>Identify the Alphabet</b></p>
+          <img class="quiz-image" src="pic1.png">
+          <div class="form-group">
+            <label>
+              <input type="radio" name="entry.137350325" value="r" required> r
+            </label>
+            <label>
+              <input type="radio" name="entry.137350325" value="t" required> t
+            </label>
+            <label>
+              <input type="radio" name="entry.137350325" value="x" required> x
+            </label>
+            <label>
+              <input type="radio" name="entry.137350325" value="y" required> y
+            </label>
+          </div>
+        </fieldset>
+        <fieldset id="ques">
+          <p style="margin-top:5px;font-family:Verdana, Geneva, Tahoma, sans-serif;color:rgb(53, 42, 36);font-size: 17.5px;"><b>Identify the Alphabet</b></p>
+          <img class="quiz-image" src="pic2.png">
+          <div class="form-group">
+            <label>
+              <input type="radio" name="entry.1166937929" value="g" required> g
+            </label>
+            <label>
+              <input type="radio" name="entry.1166937929" value="u" required> u
+            </label>
+            <label>
+              <input type="radio" name="entry.1166937929" value="p" required> p
+            </label>
+            <label>
+              <input type="radio" name="entry.1166937929" value="a" required> a
+            </label>
+          </div>
+        </fieldset>
+        <fieldset id="ques">
+          <p style="margin-top:5px;font-family:Verdana, Geneva, Tahoma, sans-serif;color:rgb(53, 42, 36);font-size: 17.5px;"><b>Identify the Alphabet</b></p>
+          <img class="quiz-image" src="pic3.png">
+          <div class="form-group">
+            <label>
+              <input type="radio" name="entry.121687003" value="x" required> x
+            </label>
+            <label>
+              <input type="radio" name="entry.121687003" value="r" required> r
+            </label>
+            <label>
+              <input type="radio" name="entry.121687003" value="g" required> g
+            </label>
+            <label>
+              <input type="radio" name="entry.121687003" value="a" required> a
+            </label>
+          </div>
+        </fieldset>
+        <fieldset id="ques">
+          <p style="margin-top:5px;font-family:Verdana, Geneva, Tahoma, sans-serif;color:rgb(53, 42, 36);font-size: 17.5px;"><b>Identify the Alphabet</b></p>
+          <img class="quiz-image" src="pic4.png">
+          <div class="form-group">
+            <label>
+              <input type="radio" name="entry.503796773" value="e" required> e
+            </label>
+            <label>
+              <input type="radio" name="entry.503796773" value="s" required> s
+            </label>
+            <label>
+              <input type="radio" name="entry.503796773" value="m" required> m
+            </label>
+            <label>
+              <input type="radio" name="entry.503796773" value="a" required> a
+            </label>
+          </div>
+        </fieldset>
+        <fieldset id="ques">
+          <p style="margin-top:5px;font-family:Verdana, Geneva, Tahoma, sans-serif;color:rgb(53, 42, 36);font-size: 17.5px;"><b>Identify the Alphabet</b></p>
+          <img class="quiz-image" src="pic5.png">
+          <div class="form-group">
+            <label>
+              <input type="radio" name="entry.1483849811" value="v" required> v
+            </label>
+            <label>
+              <input type="radio" name="entry.1483849811" value="k" required> k
+            </label>
+            <label>
+              <input type="radio" name="entry.1483849811" value="x" required> x
+            </label>
+            <label>
+              <input type="radio" name="entry.1483849811" value="y" required> y
+            </label>
+          </div>
+        </fieldset>
+        <fieldset id="ques">
+          <p style="margin-top:5px;font-family:Verdana, Geneva, Tahoma, sans-serif;color:rgb(53, 42, 36);font-size: 17.5px;"><b>Identify the Alphabet</b></p>
+          <img class="quiz-image" src="pic6.png">
+          <div class="form-group">
+            <label>
+              <input type="radio" name="entry.1951313452" value="y" required> y
+            </label>
+            <label>
+              <input type="radio" name="entry.1951313452" value="f" required> f
+            </label>
+            <label>
+              <input type="radio" name="entry.1951313452" value="p" required> p
+            </label>
+            <label>
+              <input type="radio" name="entry.1951313452" value="k" required> k
+            </label>
+          </div>
+        </fieldset>
+        <fieldset id="ques">
+          <p style="margin-top:5px;font-family:Verdana, Geneva, Tahoma, sans-serif;color:rgb(53, 42, 36);font-size: 17.5px;"><b>Identify the Number</b></p>
+          <img class="quiz-image" src="pic7.png">
+          <div class="form-group">
+            <label>
+              <input type="radio" name="entry.1996269453" value="1" required> 1
+            </label>
+            <label>
+              <input type="radio" name="entry.1996269453" value="7" required> 7
+            </label>
+            <label>
+              <input type="radio" name="entry.1996269453" value="10" required> 10
+            </label>
+            <label>
+              <input type="radio" name="entry.1996269453" value="2" required> 2
+            </label>
+          </div>
+        </fieldset>
+        <fieldset id="ques">
+          <p style="margin-top:5px;font-family:Verdana, Geneva, Tahoma, sans-serif;color:rgb(53, 42, 36);font-size: 17.5px;"><b>Identify the Number</b></p>
+        <img class="quiz-image" src="pic8.png">
+        <div class="form-group">
+          <label>
+            <input type="radio" name="entry.1996269454" value="13" required> 13
+          </label>
+          <label>
+            <input type="radio" name="entry.1996269454" value="6" required> 6
+          </label>
+          <label>
+            <input type="radio" name="entry.1996269454" value="3" required> 3
+          </label>
+          <label>
+            <input type="radio" name="entry.1996269454" value="8" required> 8
+          </label>
+        </div>
+      </fieldset>
+      <fieldset id="ques">
+        <p style="margin-top:5px;font-family:Verdana, Geneva, Tahoma, sans-serif;color:rgb(53, 42, 36);font-size: 17.5px;"><b>Identify the Number</b></p>
+        <img class="quiz-image" src="pic9.png">
+        <div class="form-group">
+          <label>
+            <input type="radio" name="entry.1996269455" value="9" required> 9
+          </label>
+          <label>
+            <input type="radio" name="entry.1996269455" value="2" required> 2
+          </label>
+          <label>
+            <input type="radio" name="entry.1996269455" value="6" required> 6
+          </label>
+          <label>
+            <input type="radio" name="entry.1996269455" value="8" required> 8
+          </label>
+        </div>
+      </fieldset>
+      <fieldset id="ques">
+        <p style="margin-top:5px;font-family:Verdana, Geneva, Tahoma, sans-serif;color:rgb(53, 42, 36);font-size: 17.5px;"><b>Identify the Number</b></p>
+        <img class="quiz-image" src="pic10.png">
+        <div class="form-group">
+          <label>
+            <input type="radio" name="entry.1996269456" value="7" required> 7
+          </label>
+          <label>
+            <input type="radio" name="entry.1996269456" value="8" required> 8
+          </label>
+          <label>
+            <input type="radio" name="entry.1996269456" value="6" required> 6
+          </label>
+          <label>
+            <input type="radio" name="entry.1996269456" value="9" required> 9
+          </label>
+        </div>
+      </fieldset>
+        <input class="btn" type="submit" value="Submit">
+        <input class="btn" type="reset" value="Reset">
+      </form>
+    </div>
+  </div>
+
+  <div class="result-container" id="resultContainer">
+    <h1>Quiz Submitted!</h1>
+    <p id="score"></p>
+    <button class="btn" id="anotherResponseBtn">Try Again</button>
+  </div>
+  <script>
+    const correctAnswers = {
+      'entry.137350325': 'r',
+      'entry.1166937929': 'g',
+      'entry.121687003': 'x',
+      'entry.503796773': 's',
+      'entry.1483849811': 'k',
+      'entry.1951313452': 'p',
+      'entry.1996269453': '1',
+      'entry.1996269454': '6',
+      'entry.1996269455': '8',
+      'entry.1996269456': '7',
+    };
+    const form = document.getElementById('quiz');
+    const resultContainer = document.getElementById('resultContainer');
+    const quizForm = document.getElementById('quizForm');
+    const scoreDisplay = document.getElementById('score');
+    const anotherResponseBtn = document.getElementById('anotherResponseBtn');
+    form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    let score = 0;
+    const formData = new FormData(form);
+      for (let [name, value] of formData) {
+        if (correctAnswers[name] === value) {
+          score++;
+        }
+      }
+      quizForm.style.display = 'none';
+      resultContainer.style.display = 'block';
+      scoreDisplay.textContent = `Your score is ${score} out of ${Object.keys(correctAnswers).length}.`; 
+    });
+    anotherResponseBtn.addEventListener('click', function() {
+      form.reset();
+      quizForm.style.display = 'block';
+      resultContainer.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Language Module</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+#search-container 
+{
+  background-color: rgb(236, 220, 209);
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  z-index: 1000;
+}
+#search-input 
+{
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#search-button 
+{
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(143, 122, 117);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body
+{  
+  background-color:  rgb(252, 240, 232);
+}
+.module-container 
+{
+  text-align: center;
+  margin-top: 60px;
+}
+.module 
+{
+display: inline-block;
+align-content: center;
+width: 700px;
+height: 100px;
+border: 1px solid #ccc;
+color: rgb(252, 240, 232);
+border-radius: 10px;
+padding: 20px;
+margin: 20px;
+background-color: rgb(203, 180, 176);
+text-align: center;
+cursor: pointer;
+}
+.quiz
+{
+display: inline-block;
+align-content: center;
+width: 700px;
+height: 100px;
+color:white;
+border: 1px solid #ccc;
+border-radius: 10px;
+padding: 20px;
+margin: 20px;
+background-color:rgb(143, 122, 117);
+text-align: center;
+cursor: pointer;  
+}
+.quiz:hover
+{
+background-color: rgb(168, 135, 114);
+}
+  </style>
+</head>
+<body>
+    <div id="search-container">
+        <input id="search-input" type="text" placeholder="Search here...">
+        <button id="search-button">Search</button>
+      </div>
+      <div id="search-results"></div>
+  <script>
+$(document).ready(function() {
+  const videos = [
+    {
+      title: "Learn how to sign Alphabets in ASL",
+      description: "Learn the basics of sign language",
+      keywords: ["abcd", "alphabets","letters","alphabet","letter"],
+      category: "Beginner",
+      videoUrl: "module1.html"
+    },
+    {
+      title: "Learn how to sign Numbers in ASL",
+      description: "Learn the basics of sign language",
+      keywords: ["numbers", "1 to 30","number","counting"],
+      category: "Beginner",
+      videoUrl: "module2.html"
+    },
+    {
+      title: "Learn how to sign Days & Months",
+      description: "Learn the basics of sign language",
+      keywords: ["week days", "months","days","month","day"],
+      category: "Beginner",
+      videoUrl: "module3.html"
+    },
+    {
+      title: "Learn how to sign Colors in ASL",
+      description: "Learn the basics of sign language",
+      keywords: ["colors","color","colour","colours"],
+      category: "Beginner",
+      videoUrl: "module4.html"
+    },
+    {
+      title: "Learn how to sign Emotions in ASL",
+      description: "Learn the basics of sign language",
+      keywords: ["emotion", "feelings","expression"],
+      category: "Beginner",
+      videoUrl: "module5.html"
+    },
+    {
+      title: "Learn how to sign Family members in ASL",
+      description: "Learn the basics of sign language",
+      keywords: ["family members", "family","relative"],
+      category: "Beginner",
+      videoUrl: "module6.html"
+    },
+    {
+      title: "Learn how to sign Words in ASL",
+      description: "Learn the basics of sign language",
+      keywords: ["words", "basic words","common words",],
+      category: "Beginner",
+      videoUrl: "module7.html"
+    },
+    {
+      title: "Learn how to sign Sentences in ASL",
+      description: "Learn the basics of sign language",
+      keywords: ["sentences","common phrases","converse"],
+      category: "Beginner",
+      videoUrl: "module8.html"
+    }
+  ];
+  $("#search-button").click(function() {
+  const searchQuery = $("#search-input").val().trim().toLowerCase();
+  if (searchQuery === "") {
+    $("#search-results").html("<p style='color: red;'>Please enter a search query.</p>");
+  } else {
+    const results = videos.filter(function(video) {
+      return video.keywords.some(function(keyword) {
+        return keyword.toLowerCase().includes(searchQuery);
+      });
+    });
+    if (results.length === 0) {
+      $("#search-results").html("<p style='color: red;'>No results found. Please try again.</p>");
+    } else if (results.length === 1) {
+      window.location.href = results[0].videoUrl;
+    } else {
+      $("#search-results").empty();
+      results.forEach(function(video) {
+        const videoElement = $("<div>").html(`
+          <h2>${video.title}</h2>
+          <p>${video.description}</p>
+          <a href="${video.videoUrl}">Watch Video</a>
+        `);
+        $("#search-results").append(videoElement);
+      });
+    }
+  }
+});
+});
+  </script>
+  <div class="module-container">
+    <div class="module" onclick="window.location.href='module1.html';">
+        <span style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif;color: rgb(109, 86, 64); font-weight: bold;">Module 1:</span> 
+        <span style="font-size: 26px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 'Helvetica Neue', sans-serif;color:rgb(109, 86, 64);"> Learn how to sign Alphabets in ASL </span>
+    </div>
+    <div class="module" onclick="window.location.href='module2.html';">
+      <span style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif;color: rgb(109, 86, 64); font-weight: bold;">Module 2:</span> 
+      <span style="font-size: 26px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+      'Open Sans', 'Helvetica Neue', sans-serif;color:rgb(109, 86, 64);"> Learn how to sign Numbers in ASL</span>
+      </div>
+    <div class="module" onclick="window.location.href='module3.html';">
+       <span style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif;color: rgb(109, 86, 64); font-weight: bold;">Module 3:</span> 
+       <span style="font-size: 26px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 'Helvetica Neue', sans-serif;color:rgb(109, 86, 64);"> Learn how to sign Days & Months</span>
+    </div>
+    <div class="module" onclick="window.location.href='module4.html';">
+       <span style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif;color: rgb(109, 86, 64); font-weight: bold;">Module 4:</span> 
+       <span style="font-size: 26px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 'Helvetica Neue', sans-serif;color:rgb(109, 86, 64);">Learn how to sign Colors in ASL</span>
+    </div>
+    <div class="module" onclick="window.location.href='module5.html';">
+       <span style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif;color: rgb(109, 86, 64); font-weight: bold;">Module 5:</span> 
+       <span style="font-size: 26px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 'Helvetica Neue', sans-serif;color:rgb(109, 86, 64);"> Learn how to sign Emotions in ASL</span>
+    </div>
+    <div class="module" onclick="window.location.href='module6.html';">
+       <span style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif;color: rgb(109, 86, 64); font-weight: bold;">Module 6:</span> 
+       <span style="font-size: 26px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 'Helvetica Neue', sans-serif;color:rgb(109, 86, 64);"> Learn how to sign Family members in ASL</span>
+    </div>
+    <div class="module" onclick="window.location.href='module7.html';">
+       <span style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif;color: rgb(109, 86, 64); font-weight: bold;">Module 7:</span> 
+       <span style="font-size: 26px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+         'Open Sans', 'Helvetica Neue', sans-serif;color:rgb(109, 86, 64);"> Learn how to sign Words in ASL</span>
+    </div>  
+    <div class="module" onclick="window.location.href='module8.html';">
+       <span style="font-size: 24px; font-family:Verdana, Geneva, Tahoma, sans-serif;color: rgb(109, 86, 64); font-weight: bold;">Module 8:</span> 
+       <span style="font-size: 26px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 'Helvetica Neue', sans-serif;color:rgb(109, 86, 64);"> Learn how to sign Sentences in ASL</span>                                   
+    </div>      
+    <div class="quiz" onclick="window.location.href='quiz.html';">
+        <h1>Quiz</h1></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Module 4</title>
+<style>
+body 
+{
+background-color: rgb(236, 220, 209);
+font-family: Arial, sans-serif;
+}
+#video-container 
+{
+  text-align: center;
+}
+#myVideo 
+{
+  width: 850px;
+  height: 480px;
+  object-fit: cover;
+}
+#video-title 
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  color: rgb(109, 86, 64);
+  margin-top: 5px;
+}
+#playbackSpeed 
+{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#back-button 
+{
+  align-self: left;
+  background-color: rgb(142, 123, 110);
+  color: rgb(243, 233, 223);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -10px;
+}
+#back-button:hover 
+{
+  background-color: rgb(113, 100, 87);
+}
+#home-button{
+  align-self: left;
+  background-color: rgb(142, 123, 110);
+  color: rgb(243, 233, 223);
+  padding: 10px 20px;
+  margin-left:20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -10px;
+}
+#home-button:hover{
+  background-color: rgb(113, 100, 87);
+}
+</style>
+</head>
+<body>
+  <div id="video-container">
+  <video id="myVideo" poster="module4.jpg" controls>
+  <source src="module4.mp4" type="video/mp4">
+  </video>
+  <p id="video-title">Learn how to sign Colors in ASL</p>
+  <button id="back-button" onclick="window.location.href='title1.html'">Back to Module Page</button>
+  <button id="home-button" onclick="window.location.href='http://localhost/webd/homepage.php'">Back to Home Page</button>
+  </div>
+  <script>
+  var video = document.getElementById("myVideo");
+  </script>
+  </body>
+  </html>
