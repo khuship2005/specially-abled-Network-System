@@ -1,39 +1,95 @@
-# Specially-abled-Network-System
-It is a web platform empowering individuals with disabilities through access to job opportunities, government schemes, and sign language learning. It provides a one-stop solution for users to explore career options, access benefits, and learn sign language. The platform aims to promote inclusivity and support the everyday needs and rights of disabled individuals.
+# 🌐 Specially Abled Network System
 
-# Getting Started:
-To run this project on your local machine, follow these steps:
-  
-Prerequisites:
-1. Make sure you have XAMPP installed on your computer.
-2. Ensure you have PHP installed and configured properly.
-3. Create a database named 'registration' with a table named 'users'.
+**Empowering individuals with disabilities through access to job opportunities, government schemes, and sign language learning.**  
+A one-stop platform that promotes inclusivity and supports the everyday needs and rights of specially-abled individuals.
 
-  
-Installation:
-1. Clone the repository: git clone https://github.com/khuship2005/specially-abled-Network-System.git
-2. Navigate to the cloned repository and copy the project folder.
-3. Paste the project folder into the htdocs directory of your web server.
+---
 
-   
-Running the Project
-1. Start your web server i.e. Apache and MySQL.
-2. Open a web browser and navigate to http://localhost/your-project-folder/homepage.php
+![GitHub Repo Size](https://img.shields.io/github/repo-size/khuship2005/specially-abled-Network-System) 
+![GitHub language](https://img.shields.io/github/languages/top/khuship2005/specially-abled-Network-System) 
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
+---
 
-# Execution:
-Visit "http://localhost/folder_name/homepage.php" on web browser to access the web appliaction.
+## 📌 Project Overview
 
+The **Specially Abled Network System** is a web-based platform designed to:
 
-# Technologies used:
-- Front-end: HTML, CSS, and JavaScript for designing and building the website's user interface.
+- Enable access to **job opportunities** tailored for differently-abled individuals.
+- Provide up-to-date information on **government welfare schemes**.
+- Offer an **interactive sign language learning module** to promote communication and inclusivity.
 
-- Back-end: PHP for handling form data and database interaction.
-- Database: MySQL for storing and managing data, interacted with through PHP.
+---
 
+## 🔑 Features
 
-# Features:
-1. Job Opportunities
-2. Government Scheme
-3. Sign Language Tutorial Module
-4. User Account Management: Secure login and logout functionality to access personalized job and scheme details.
+1. **Accessible Job Listings** – Career options curated for people with disabilities.  
+2. **Government Scheme Info** – Central hub for welfare benefits and initiatives.  
+3. **Sign Language Learning** – Interactive tutorial modules and quizzes.  
+4. **User Account Management** – Secure registration, login, and logout functionality.  
+5. **Responsive UI** – Accessible on both desktop and mobile devices.
+
+---
+
+## 🛠 Technologies Used
+
+- **Frontend:** HTML5, CSS3, JavaScript  
+- **Backend:** PHP  
+- **Database:** MySQL  
+- **Version Control:** Git & GitHub  
+
+---
+
+## 🚀 Getting Started
+
+To run this project locally on your machine, follow the steps below:
+
+### ✅ Prerequisites
+
+- [XAMPP](https://www.apachefriends.org/index.html) installed (Apache + MySQL)
+- PHP installed and configured properly
+- Create a database named `registration` with a table named `users`
+
+---
+
+### 🧩 Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/khuship2005/specially-abled-Network-System.git
+   ```
+
+2. **Move Files to Web Server Directory**:
+   - Copy the cloned folder into your `htdocs` directory inside XAMPP or your preferred PHP server.
+
+3. **Set Up the Database**:
+   - Open **phpMyAdmin** and import the SQL file provided in the repository (or create the `registration` database and `users` table manually).
+
+4. **Configure Database Connection**:
+   - Open `config.php` and enter your MySQL username/password as needed.
+
+5. **Start Apache and MySQL** from the XAMPP Control Panel.
+
+---
+
+### 💻 Running the Project
+
+- Open your browser and go to:
+  ```
+  http://localhost/specially-abled-Network-System/homepage.php
+  ```
+
+---
+
+## 🌍 Deployment Guide
+
+To deploy this platform on a live server:
+
+1. Choose a PHP-compatible hosting provider.
+2. Upload all project files to the server.
+3. Set up a database on the hosting control panel.
+4. Import the SQL file to create required tables.
+5. Update database credentials in `config.php` accordingly.
+6. Access the application via your domain URL.
+
+---
