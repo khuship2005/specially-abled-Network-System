@@ -5,12 +5,6 @@ A one-stop platform that promotes inclusivity and supports the everyday needs an
 
 ---
 
-![GitHub Repo Size](https://img.shields.io/github/repo-size/khuship2005/specially-abled-Network-System) 
-![GitHub language](https://img.shields.io/github/languages/top/khuship2005/specially-abled-Network-System) 
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
-
----
-
 ## 📌 Project Overview
 
 The **Specially Abled Network System** is a web-based platform designed to:
